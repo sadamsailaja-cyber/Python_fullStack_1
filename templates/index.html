@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>python FullStack</title>
+    <link rel="stylesheet" href="{{url_for ('static',filename='css/style.css')}}">
+    <title>Python FullStack</title>
 </head>
+
 <body>
     <header>
-    <hi>NRIIT Learning Management system</hi>
-    <p>Learn Practice Get Placed</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">contact</a>
-        <a href="courses.html">courses</a>
-        <a href="login.html">login</a>
-        <a href="register.html">register</a>
-        <a href="trainers.html">trainers</a>
+        <h1>NRIIT Learning Management System</h1>
+        <p>Learn Practice Get Placed</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/courses">Courses</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+            <a href="/trainers">Trainers</a>
         </nav>
         <hr>
-        </header>
-        <main>
-          <section>
-            <h2 id="Welcome">Welcome to NRIIT Learning Management System</h2>
-            <p>We are a learning provider of online learning solutions, offering a wide range of courses and training programs to help individuals and orgnizations achieve their learning goals.</p>
-            <img src="images/image.jpg" alt="Banner" width="500" class="Banner">
+    </header>
+    <main>
+        <section>
+            <h2 id="welcome">Welcome to NRIIT Learning Managemnet System</h2>
+            <p>We are a leading provider of online learning solutions, offering a wide range of courses and training
+                programs to help individuals and organizations achieve their learning goals. </p>
+            <img src="images/image.jpg" alt="Banner" width="500" class="banner">
         </section>
         <section>
             <h2>Why Choose us?</h2>
@@ -36,27 +39,28 @@
                 <li>Flexible Learning</li>
             </ul>
         </section>
-    </section>
-    <h2>popular Course</h2>
-    <article>
-        <h3>python FullStack Development</h3>
-        <p>Learn Python FullStack</p><br>
-        <p>
-            Html,css,javaScript,Flask,SQL
-        </p>
-    </article>
-    </section>
-         </main>
-         <footer>
+        <section> 
+            <h2>Popular Courses</h2>
+            <article>
+                <h3>Python FullStack Development</h3>
+                <p>Learn Python FullStack</p><br>
+                <p>
+                    Html,CSS,JavaScript,Flask,SQL
+                </p>
+            </article>
+        </section>
+    </main>
+        <footer>
         <hr>
         <p>&copy; 2026 NRIIT Learning Management System</p>
         <p>Email: info@nriit.edu</p>
         <p>Phone: +91 9876543210</p>
         <p>Follow Us:</p>
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">LinkedIn</a>
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a>
     </footer>
-<script src="js/script.js"></script>
+<script src="{{url_for('static',filename='js/script.js')}}"></script>
 </body>
+
 </html>

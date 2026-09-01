@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>contact page</title>
+        <link rel="stylesheet" href="css/style.css">
+    <title>Contact Page</title>
+  <link rel="stylesheet" href="{{url_for ('static',filename='css/style.css')}}">
 </head>
+
 <body>
     <header>
-    <hi>Contact NRIIT Learning Management system</hi>
-    <p>Learn Practice Get Placed</p>
+        Home <br>
+        <h1>Contact NRIIT Learning Management</h1>
+        <p>Learn Practice Get Placed</p>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">contact</a>
-        <a href="courses.html">courses</a>
-        <a href="login.html">login</a>
-        <a href="register.html">register</a>
-        <a href="trainers.html">trainers</a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/courses">Courses</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+        <a href="/trainers">Trainers</a>
     </nav>
-    <hr>
     </header>
     <main>
         <section>
             <h2>Contact Us</h2>
             <p>NRI Institute of Information Technology</p>
-            <p>Agiripalli,Andhra pradesh</p>
+            <p>Agiripalli, Andhra Pradesh</p>
             <p>Email: info@nriit.edu</p>
             <p>Phone: +91 9876543210</p>
         </section>
         <section>
             <h2>Institute Audio</h2>
             <audio controls>
-            <source src="audio/intro.mp3" type="audio/mpeg"></audio>
+                <source src="audio/intro.mp3" type="audio/mpeg">
+            </audio>
         </section>
         <section>
             <h2>Campus Tour</h2>
-            <video width="500" controls><source src="video/intro.mp4" type="video/mp4"></video>
+            <video width="500" controls>
+                <source src="video/intro.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section>
+            <h2>Python Introduction</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video"
+                allowfullscreen>
+            </iframe>
+        </section>
+        <section>
+            <h2>Locate Us</h2>
+            <iframe src="https://www.google.com/maps?q=Agiripalli&output=embed" width="600" height="350">
+            </iframe>
         </section>
     </main>
     <footer>
@@ -45,10 +62,12 @@
         <p>Email: info@nriit.edu</p>
         <p>Phone: +91 9876543210</p>
         <p>Follow Us:</p>
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">LinkedIn</a>
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+
 </body>
+
 </html>
